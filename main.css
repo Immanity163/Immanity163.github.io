@@ -164,6 +164,12 @@ header{
     }
 }
 
+@media (max-width: 800px) {
+    main{
+        margin: 0 0;
+        width: 100vw;
+    }
+}
 @keyframes transform{
     0%{
       transform: scale(1);
