@@ -16,6 +16,9 @@ header{
     background-color: #456975;
     border-radius: 0 0 30px 30px;
 }
+a:visited{
+    color:#000
+}
 .main-header{
     margin: 30px;
     text-align: center;
@@ -23,6 +26,7 @@ header{
 .flex{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .header{
     font-size: 25px;
@@ -62,7 +66,6 @@ header{
     margin: 30px 30px 30px 60px;
 }
 .container{
-    justify-content: space-between;
     margin: 30px auto;
     width: 80%;
     text-align: center;
@@ -87,7 +90,22 @@ header{
     animation: transform 0.3s;
     transform: scale(1.2);
     border: 3px solid #77898E
-} 
+}
+#links{
+    list-style: none;
+    font-size: 24px;
+    color: inherit;
+}
+.link{
+    text-decoration: none;
+}
+.link:hover{
+    color: #5ABBD5;
+    animation: change-color 0.3s;
+}
+#about{
+    margin: 30px 30px 30px 60px;
+}
 #desc{
     margin: 30px auto;
     width: 75%;
@@ -183,5 +201,15 @@ header{
     100%{
       transform: scale(1.2);
       border: 3px solid #77898E
+    }
+  }
+
+  @keyframes change-color{
+    0%{
+        color: #000;
+      
+    }
+    100%{
+        color: #5ABBD5;
     }
   }
